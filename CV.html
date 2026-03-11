@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Portfolio</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+animation:fade 2s;
+}
+
+.hero img{
+width:160px;
+height:160px;
+border-radius:50%;
+border:4px solid #38bdf8;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+margin:10px;
+color:#cbd5f5;
+}
+
+.btn{
+background:#38bdf8;
+padding:10px 20px;
+border-radius:6px;
+text-decoration:none;
+color:black;
+margin-top:10px;
+display:inline-block;
+}
+
+/* SOCIAL */
+
+.social{
+margin-top:20px;
+font-size:22px;
+}
+
+.social a{
+color:white;
+margin:10px;
+}
+
+.social a:hover{
+color:#38bdf8;
+}
+
+/* SECTION */
+
+section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:32px;
+color:#38bdf8;
+margin-bottom:40px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:700px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:20px;
+text-align:center;
+border-radius:10px;
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-8px);
+background:#334155;
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.project{
+background:#1e293b;
+border-radius:10px;
+overflow:hidden;
+transition:0.3s;
+}
+
+.project img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+.project div{
+padding:20px;
+}
+
+.project:hover{
+transform:scale(1.05);
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+margin:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#020617;
+text-align:center;
+padding:20px;
+margin-top:40px;
+color:#94a3b8;
+}
+
+/* ANIMATION */
+
+@keyframes fade{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>MyPortfolio</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<img src="https://i.pravatar.cc/300">
+
+<h1>Your Name</h1>
+
+<p>Software Engineer | Web Developer</p>
+
+<a class="btn" href="#">Download CV</a>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-github"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+</div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="about">
+
+<p>
+I am a passionate developer who enjoys building web applications and learning new technologies. I study management and finance at university while improving my software development skills.
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">React</div>
+<div class="skill">Java</div>
+<div class="skill">MySQL</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 class="title">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<img src="https://picsum.photos/400/200">
+
+<div>
+
+<h3>Course Registration System</h3>
+
+<p>Java based system for managing students and courses.</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://picsum.photos/401/200">
+
+<div>
+
+<h3>Portfolio Website</h3>
+
+<p>Developer portfolio built using HTML, CSS and JavaScript.</p>
+
+</div>
+
+</div>
+
+<div class="project">
+
+<img src="https://picsum.photos/402/200">
+
+<div>
+
+<h3>Graphic Design Page</h3>
+
+<p>Social media branding and graphic design works.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+
+<p>Email: your@email.com</p>
+<p>Phone: 07XXXXXXXX</p>
+<p>Location: Sri Lanka</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Your Name | Developer Portfolio</p>
+
+</footer>
+
+</body>
+</html>
